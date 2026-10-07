@@ -32,8 +32,6 @@ with st.form("input_form"):
         st.session_state.user_list.append(name)
 
 
-import streamlit as st
-
 tasks = [
     "1. API 스펙 문서 작성",
     "2. 프론트엔드 컴포넌트 개발",
@@ -47,3 +45,25 @@ for task in tasks:
     
     with st.container(border=True):
         st.write(task)
+
+# 페이지 제목 설정
+st.title("첫 Streamlit 앱")
+
+# 텍스트 출력
+
+st.write("Streamlit을 이용해 만든 웹 애플리케이션입니다.")
+
+# 사용자 입력 받기
+
+name = st.text_input("이름을 입력하세요:")
+
+# 버튼 클릭 이벤트
+
+if st.button("인사하기"):
+
+    if name:
+
+        st.success(f"안녕하세요, {name}님!")
+
+    else:
+        st.warning("이름을 입력해주세요.")
