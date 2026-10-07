@@ -12,7 +12,7 @@ with col2:
 
 # 데이터 입력
 name = st.text_input("아이디")
-password = st.text_input("password")
+password = st.text_input("비밀번호")
 btn = st.button("확인")
 
 #폼 입력 & 상태관리
