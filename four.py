@@ -5,12 +5,11 @@ st.write("Streamlit을 이용한 웹앱")
 
 name = st.text_input("아이디")
 password = st.text_input("비밀번호")
-btn = st.button("확인")
 if st.button("확인"):
     if name:
         st.success(f"안녕하세요, {admin}님")
     else:
-        st.warning("이름을 입력하세요")
+        st.warning("아이디, 비밀번호를 입력하세요.")
 
 
 if "user_list" not in st.session_state:
@@ -31,13 +30,32 @@ for task in tasks:
     with st.container(border=True):
         st.write(task)
 
+st.success("각 시간 별 점수를 넣어주세요")
 
-col1, col2, col3, col4 = st.coulmns(4)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.success_text_input("나의 과거")
+    st.text_input("나의 과거")
 with col2:
-    st.success_text_input("나의 현재")
+    st.text_input("나의 현재")
 with col3:
-    st.success_text_input("나의 미래")
+    st.text_input("나의 미래")
 with col4:
-    st.success_text_input("앞으로의 계획")
+    st.text_input("앞으로의 계획")
+
+st.write("등록하기 누른 후 저장하세요.")
+
+col5, col6 = st.columns(2)
+
+with col5:
+    if st.button("등록하기"):   
+        if name:
+            st.success(f"확인되었습니다.")
+        else:
+            st.warning("빈칸을 넣어주세요.")
+with col6:
+    if st.button("임시저장"):
+        if name:
+            st.success(f"임시저장되었습니다.")
+        else:
+            st.warning("다시시도해주세요.")
+
