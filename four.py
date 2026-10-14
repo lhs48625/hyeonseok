@@ -21,7 +21,7 @@ password = st.text_input("비밀번호")
 if name and password:
     db.collection("diary").add({"name": name, "password": password, "date": "2026-10-14"})
     st.success("저장 완료!"); st.rerun()
-    st.button("로그인하기"):
+    st.button("로그인하기")
     if name:
         st.success(f"안녕하세요, {admin}님")
     else:
