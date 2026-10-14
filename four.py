@@ -74,7 +74,7 @@ st.write("등록하기 누른 후 저장하세요.")
 
 if st.session_state.user_list:
     col5, col6 = st.columns(2)
-     with col5:
+    with col5:
         if st.button("등록하기"): 
             if name:
                 st.success(f"확인되었습니다.")
