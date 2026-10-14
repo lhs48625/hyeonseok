@@ -21,26 +21,20 @@ password = st.text_input("비밀번호")
 if name and password:
     db.collection("diary").add({"name": name, "password": password, "date": "2026-10-14"}) 
     if name:
-        st.success(f"안녕하세요, {name}")
+        st.success(f"안녕하세요, {name}님")
     else:
         st.warning("아이디, 비밀번호를 입력하세요.")
-    st.success(name); st.rerun()
+    st.rerun()
     st.button("로그인하기")
 
 
-col7, col8, col9, col10 = st.columns(4)
+col7, col8, col9 = st.columns(3)
 with col7:
     st.button("아이디찾기")
 with col9:
     st.button("비밀번호찾기")
 with col9:
     st.button("회원가입")
-with col10:
-    if st.button("로그인하기"):
-        if name:
-                st.success(f"안녕하세요, {admin}님")
-        else:
-                st.warning("아이디, 비밀번호를 입력하세요.")
 
 
 if "user_list" not in st.session_state:
