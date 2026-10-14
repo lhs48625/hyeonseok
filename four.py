@@ -75,16 +75,18 @@ st.write("등록하기 누른 후 저장하세요.")
 if st.session_state.user_list:
     col5, col6 = st.columns(2)
     with col5:
-        if st.button("등록하기"): 
-            if name:
-                st.success(f"확인되었습니다.")
-            else:
-                st.warning("빈칸을 넣어주세요.")
+     st.button("등록하기")
+     if st.button("등록하기"): 
+        if name:
+            st.success(f"확인되었습니다.")
+        else:
+            st.warning("빈칸을 넣어주세요.")
     with col6:
-        if st.button("임시저장"):
-            if name:
-                 st.success(f"임시저장되었습니다.")
-            else:
-                 st.warning("다시시도해주세요.")
+     st.button("임시저장")
+     if st.button("임시저장"):
+        if name:
+            st.success(f"임시저장되었습니다.")
+        else:
+            st.warning("다시시도해주세요.")
 
 
