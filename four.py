@@ -63,6 +63,7 @@ st.success("각 시간 별 점수를 넣어주세요")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.text_input("나의 과거")
+    score = st.number_input("점수", min_value=0, max_value=30)
 with col2:
     st.text_input("나의 현재")
 with col3:
