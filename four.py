@@ -25,7 +25,7 @@ if name and password:
     if name:
         st.success(f"안녕하세요, {admin}님")
     else:
-        stwarning("아이디, 비밀번호를 입력하세여요.")
+        st.warning("아이디, 비밀번호를 입력하세요.")
     
 
 
