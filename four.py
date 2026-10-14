@@ -1,4 +1,7 @@
+import json
 import streamlit as st
+import firebase_admin
+from firebase_admin import credentials, firestore
 
 st.title("혼자 만드는 웹앱2")
 st.write("Streamlit을 이용한 웹앱")
