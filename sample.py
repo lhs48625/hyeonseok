@@ -9,7 +9,9 @@ if not firebase_admin._apps:
     cred_dict = json.loads(key_string)
     cred = credentials.Certificate(cred_dict)
     firebase_admin.initialize_app
-    
+
+db = firestore.client()
+
 
 # 1. 입력 폼 만들기
 
