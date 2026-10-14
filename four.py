@@ -72,7 +72,7 @@ with col4:
 
 st.write("등록하기 누른 후 저장하세요.")
 
-if.session_state.user_list:
+if st.session_state.user_list:
     col5, col6 = st.columns(2)
      with col5:
         if st.button("등록하기"): 
