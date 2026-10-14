@@ -30,10 +30,10 @@ if name and password:
 
 col7, col8, col9 = st.columns(3)
 with col7:
-    if st.button("아이디찾기")
+    if st.button("아이디찾기"):
         st.success(f"아이디가 있습니다.")
 with col8:
-    if st.button("비밀번호찾기")
+    if st.button("비밀번호찾기"):
         st.success(f"중복된 비밀번호입니다.")
 with col9:
     if st.button("회원가입"):
