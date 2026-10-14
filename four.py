@@ -25,7 +25,7 @@ if name and password:
     else:
         st.warning("아이디, 비밀번호를 입력하세요.")
     st.rerun()
-    st.button("로그인하기")
+st.button("로그인하기")
 
 
 col7, col8, col9 = st.columns(3)
