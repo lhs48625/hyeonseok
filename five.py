@@ -12,7 +12,7 @@ if not firebase_admin._apps:
 
 db = firestore.client()
 
-st.title("은희의 메모장")
+st.title("현석의 메모장")
 
 #수정 포인트: clear_submit_on_submit -> clear_on_submit
 with st.form("input_form", clear_on_submit=True):
