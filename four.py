@@ -9,6 +9,11 @@ st.write("Streamlit을 이용한 웹앱")
 name = st.text_input("아이디")
 password = st.text_input("비밀번호")
 
+if name and password:
+    db.collection("diary").add({"name": name, "password": password, "date": "2026-10-14"})
+    st.success("저장 완료!"); st.rerun()
+    st.button("로그인하기")
+
 col7, col8, col9, col10 = st.columns(4)
 with col7:
     st.button("아이디찾기")
