@@ -124,3 +124,5 @@ while True:
     if main1 == 0:
         print("종료")
         break
+#if name is not None
+#name 변수의 값이 None이 아닐 경우 실행하라는 뜻입니다.
