@@ -49,6 +49,9 @@ while True:
      print(sorted(list1, key=lambda item : item[1], reverse=True))
      print(list1[3], list1[:3])
 
+#########*************************
+
+
 
     if main1 == 2:
      name = input("이름 : ").strip()
