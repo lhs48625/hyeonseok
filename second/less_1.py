@@ -1,5 +1,6 @@
 import sys
 
+
 # 파이썬에서 print에서 자동 줄바꿈 가능 자바에서는 println을 사용해야됨
 print("hello, python")
 print("수업시간", 60)
