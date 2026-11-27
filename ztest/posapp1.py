@@ -123,6 +123,6 @@ def summarize(rows):
         
 
         # 모든 상품의 매출과 판매 수량을 계산하여 딕셔너리로 반환
-        return {'revenue':sum(by_product.values()), # 전체 매출액 계산
+    return {'revenue':sum(by_product.values()), # 전체 매출액 계산
                'quantity':sum(row['quantity'] for row in rows),# 전체 판매 수량 계산
                'by_product':by_product}# 상품별 매출 내역 반환
