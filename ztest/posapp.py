@@ -48,8 +48,8 @@ else:
         base_rows = parse_sales(sample_path.read_bytes())
     else:
         base_rows = [
-            {"product": "book", "quantity": 2, "price": 12000},
-            {"product": "pen", "quantity": 5, "price": 1500},
+            {"product": "일반", "quantity": 1, "price": 5000},
+            {"product": "긴급", "quantity": 1, "price": 6000},
         ]
 
 all_rows = list(base_rows) + list(st.session_state.pos_orders)
