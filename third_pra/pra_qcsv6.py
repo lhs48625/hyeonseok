@@ -1,5 +1,5 @@
 import streamlit as st
-from hyeonseok.zpra_third.pra_qcsv5 import parse_sales
+from pra_qcsv5 import parse_sales
 
 st.title("CSV 업로드")
 uploaded = st.file_uploader("매출 csv", type=["csv"])
